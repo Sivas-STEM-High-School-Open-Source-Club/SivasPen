@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sivas Kalem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+
+  <div id="closeApp">❌</div>
+
+  <div id="toolbar">
+    <h1>Sivas Kalem</h1>
+    <label>Renk: <input type="color" id="colorPicker"></label>
+    <label>Kalem Kalınlığı: <input type="range" id="penWidth" min="1" max="50" value="5"></label>
+    <label>Silgi Kalınlığı: <input type="range" id="eraserWidth" min="5" max="100" value="20"></label>
+    <button id="pen">✏️ Kalem</button>
+    <button id="eraser">🧽 Silgi</button>
+    <button id="clear">🗑️ Temizle</button>
+    <button id="undo">↩️ Geri Al</button>
+    <button id="redo">↪️ İleri Al</button>
+    <button id="blank">📄 Yeni Boş Sayfa</button>
+    <button id="hide">👻 Gizle</button>
+    <button id="exit">❌ Çizimi Dondur</button>
+    <div class="footer"><small>Eren M. Erdoğan tarafından geliştirildi</small></div>
+  </div>
+
+  <div id="eraserPreview"></div>
+  <div id="reactivateLogo" style="display: none;">🖊️</div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

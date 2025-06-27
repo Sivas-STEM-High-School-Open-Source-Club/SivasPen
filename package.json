@@ -1,0 +1,12 @@
+{
+  "name": "SivasPen",
+  "version": "1.0.0",
+  "description": "Open Source writing assistant mady by Eren M. Erdogan for Sivas STEM High School Open Source Club ",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "*"
+  }
+}

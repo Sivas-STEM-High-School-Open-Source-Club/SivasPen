@@ -1,0 +1,100 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+#toolbar {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 220px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  z-index: 10;
+  cursor: move;
+  resize: both;
+  overflow: auto;
+}
+
+#toolbar h1 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+#toolbar label {
+  display: block;
+  margin: 5px 0;
+}
+
+#toolbar button {
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+}
+
+button.selected {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+#closeApp {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 20;
+  background: rgba(255, 0, 0, 0.7);
+  padding: 4px 10px;
+  border-radius: 6px;
+  color: white;
+}
+
+#reactivateLogo {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 32px;
+  cursor: pointer;
+  background: #ffffffcc;
+  border: 2px solid #333;
+  border-radius: 50%;
+  padding: 8px;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#eraserPreview {
+  position: absolute;
+  border: 2px dashed #000;
+  border-radius: 50%;
+  pointer-events: none;
+  display: none;
+  z-index: 9;
+  opacity: 0.4;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#toolbar .footer {
+  font-style: italic;
+  font-family: 'Courier New', monospace;
+  font-size: 10px;
+  text-align: right;
+  margin-top: 20px;
+  color: #999;
+}
